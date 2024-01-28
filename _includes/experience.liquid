@@ -1,0 +1,34 @@
+<div class="experience">
+  {% if site.experience != blank %}
+    {% assign experience_size = site.experience | size %}
+    <div
+      class="table-responsive"
+    >
+      <table class="table table-sm table-borderless">
+        {% assign experience = site.experience | reverse %}
+        {% for item in experience %}
+          <tr>
+            <th scope="row" style="width: 30%; vertical-align: top;">
+              {% if item.start_date and item.end_date %}
+                {% if item.expected %}
+                  {{ item.start_date | date: '%b %Y' }} - {{ item.end_date | date: '%b %Y' }} (<em>expected</em>)
+                {% else %}
+                  {{ item.start_date | date: '%b %Y' }} - {{ item.end_date | date: '%b %Y' }}
+                {% endif %}
+              {% endif %}
+            </th>
+            <td>
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="experience-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No experience so far...</p>
+  {% endif %}
+</div>

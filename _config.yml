@@ -73,7 +73,7 @@ mastodon_username: # your mastodon instance+username in the format instance.tld/
 linkedin_username: sue-hyun-park-2682ba1a0 # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: AyZdps8AAAAJ # your Google Scholar ID
-semanticscholar_id: Sue-Hyun-Park/2266436197 # your Semantic Scholar ID
+semanticscholar_id: # Sue-Hyun-Park/2266436197 # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -166,10 +166,14 @@ external_sources:
 
 collections:
   news:
-    defaults:
-      layout: post
     output: true
     permalink: /news/:path/
+  education:
+    output: true
+  experience:
+    output: true
+  services:
+    output: true
 #   projects:
 #     output: true
 #     permalink: /projects/:path/
@@ -178,6 +182,16 @@ announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
+
+services:
+  enabled: true
+
+education:
+  enabled: true
+
+experience:
+  enabled: true
+
 
 # latest_posts:
 #   enabled: true
@@ -202,7 +216,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages/404.md", "_pages/about.md", "_pages/news.md", "_pages/publications.md"]
+include: ["_pages/404.md", "_pages/about.md", "_pages/news.md", "_pages/publications.md", "_pages/education.md", "_pages/experience.md", "_pages/services.md"]
 exclude:
   - bin
   - CONTRIBUTING.md

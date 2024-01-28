@@ -1,0 +1,34 @@
+<div class="education">
+  {% if site.education != blank %}
+    {% assign education_size = site.education | size %}
+    <div
+      class="table-responsive"
+    >
+      <table class="table table-sm table-borderless">
+        {% assign education = site.education | reverse %}
+        {% for item in education %}
+          <tr>
+            <th scope="row" style="width: 30%; vertical-align: top;">
+              {% if item.start_date and item.end_date %}
+                {% if item.expected %}
+                  {{ item.start_date | date: '%b %Y' }} - {{ item.end_date | date: '%b %Y' }} (<em>expected</em>)
+                {% else %}
+                  {{ item.start_date | date: '%b %Y' }} - {{ item.end_date | date: '%b %Y' }}
+                {% endif %}
+              {% endif %}
+            </th>
+            <td>
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="education-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No education so far...</p>
+  {% endif %}
+</div>

@@ -35,6 +35,15 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+
+        <!-- Social -->
+        {% if page.social %}
+          <div class="social">
+            <div class="contact-icons">{% include social.liquid %}</div>
+
+            <div class="contact-note">{{ site.contact_note }}</div>
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
@@ -59,18 +68,34 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
+    <!-- Academic services -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/services/' | relative_url }}" style="color: inherit">services</a>
+      </h2>
+      {% include services.liquid %}
     {% endif %}
+
+    <!-- Education -->
+    {% if page.education %}
+      <h2>
+        <a href="{{ '/education/' | relative_url }}" style="color: inherit">education</a>
+      </h2>
+      {% include education.liquid %}
+    {% endif %}
+
+    <!-- Experience -->
+    {% if page.experience %}
+      <h2>
+        <a href="{{ '/experience/' | relative_url }}" style="color: inherit">work experience</a>
+      </h2>
+      {% include experience.liquid %}
+    {% endif %}
+
   </article>
 </div>

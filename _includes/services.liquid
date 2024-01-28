@@ -1,0 +1,30 @@
+<div class="services">
+  {% if site.services != blank %}
+    {% assign services_size = site.services | size %}
+    <div
+      class="table-responsive"
+    >
+      <table class="table table-sm table-borderless">
+        {% assign services = site.services | reverse %}
+        {% for item in services %}
+          <tr>
+            <th scope="row" style="width: 30%; vertical-align: top;">
+              {% if item.title %}
+                {{ item.title }}
+              {% endif %}
+            </th>
+            <td>
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="services-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No services so far...</p>
+  {% endif %}
+</div>
