@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I joined [KAIST AI](https://gsai.kaist.ac.kr/) as an M.S. student.
+Starting a M.S. at [KAIST AI](https://gsai.kaist.ac.kr/).

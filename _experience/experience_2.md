@@ -6,5 +6,5 @@ inline: true
 related_posts: false
 ---
 
-[Artificial Intelligence Institute of SNU (AIIS)](https://aiis.snu.ac.kr/eng/)  
+[Artificial Intelligence Institute of SNU](https://aiis.snu.ac.kr/eng/)  
 Technical Writer [[blog]](https://medium.com/snu-aiis-blog)

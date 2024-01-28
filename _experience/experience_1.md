@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 [FriendliAI](https://friendli.ai/)  
-Corporate development & Technical writing intern
+Corporate Development & Technical Writing Intern
