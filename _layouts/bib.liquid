@@ -137,7 +137,7 @@
     {% elsif entry.archivePrefix == 'arXiv' %}
       {% capture entrytype %}<em>arXiv:{{entry.eprint}}</em>{% endcapture %}
     {% else %}
-      {% capture entrytype %}{% endcapture %}
+      {% capture entrytype %}<em>arXiv preprint</em>{% endcapture %}
     {% endif %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
