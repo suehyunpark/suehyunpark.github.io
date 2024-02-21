@@ -7,5 +7,5 @@ related_posts: false
 expected: true
 ---
 
-KAIST AI  
-M.S. in Artificial Intelligence, Advisor: [Minjoon Seo](https://seominjoon.github.io/)
+[KAIST AI](https://gsai.kaist.ac.kr/)  
+Master of Science in Artificial Intelligence, advised by [Minjoon Seo](https://seominjoon.github.io/)

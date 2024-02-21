@@ -6,5 +6,5 @@ inline: true
 related_posts: false
 ---
 
-[SPLab](https://spl.snu.ac.kr/), Seoul National University  
-Research Intern, Host: [Byung-gon Chun](https://bgchun.github.io/)
+[Software Platform Lab](https://spl.snu.ac.kr/), Seoul National University  
+Research intern, hosted by [Byung-gon Chun](https://bgchun.github.io/)

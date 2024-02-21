@@ -6,5 +6,5 @@ inline: true
 related_posts: false
 ---
 
-[LKLab](https://lklab.kaist.ac.kr/), KAIST AI  
-Research Intern, Host: [Minjoon Seo](https://seominjoon.github.io/)
+[Language & Knowledge Lab](https://lklab.kaist.ac.kr/), KAIST AI  
+Research intern, hosted by [Minjoon Seo](https://seominjoon.github.io/)

@@ -6,5 +6,7 @@ inline: true
 related_posts: false
 ---
 
-Seoul National University (SNU)  
-B.B.A. & B.S. in Artificial Intelligence, *Cum Laude*
+[Seoul National University](https://en.snu.ac.kr/index.html)  
+Bachelor of [Business Administration](https://cba.snu.ac.kr/en)  
+Bachelor of Science in [Artificial Intelligence (Interdisciplinary major)](https://imai.snu.ac.kr/)  
+*Cum Laude*

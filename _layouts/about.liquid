@@ -73,8 +73,16 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Invited talks -->
+    {% if page.talks %}
+      <h2>
+        <a href="{{ '/talks/' | relative_url }}" style="color: inherit">invited talks</a>
+      </h2>
+      {% include talks.liquid %}
+    {% endif %}
+
     <!-- Academic services -->
-    {% if page.selected_papers %}
+    {% if page.services %}
       <h2>
         <a href="{{ '/services/' | relative_url }}" style="color: inherit">services</a>
       </h2>
