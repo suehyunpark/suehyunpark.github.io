@@ -156,9 +156,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -173,6 +173,8 @@ collections:
   experience:
     output: true
   services:
+    output: true
+  talks:
     output: true
 #   projects:
 #     output: true
@@ -190,6 +192,9 @@ education:
   enabled: true
 
 experience:
+  enabled: true
+
+talks:
   enabled: true
 
 
@@ -216,7 +221,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages/404.md", "_pages/about.md", "_pages/news.md", "_pages/publications.md", "_pages/education.md", "_pages/experience.md", "_pages/services.md"]
+include: ["_pages/404.md", "_pages/about.md", "_pages/news.md", "_pages/publications.md", "_pages/education.md", "_pages/experience.md", "_pages/services.md", "_pages/talks.md"]
 exclude:
   - bin
   - CONTRIBUTING.md
