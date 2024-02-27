@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 [Software Platform Lab](https://spl.snu.ac.kr/), Seoul National University  
-Research intern, hosted by [Byung-gon Chun](https://bgchun.github.io/)
+Undergraduate research assistant

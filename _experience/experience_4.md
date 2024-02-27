@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 [Language & Knowledge Lab](https://lklab.kaist.ac.kr/), KAIST AI  
-Research intern, hosted by [Minjoon Seo](https://seominjoon.github.io/)
+Undergraduate research assistant
