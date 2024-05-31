@@ -1,20 +1,20 @@
 ---
 ---
 
-@misc{lee2023volcano,
-      title={Volcano: Mitigating Multimodal Hallucination through Self-Feedback Guided Revision}, 
-      author={Seongyun Lee and Sue Hyun Park and Yongrae Jo and Minjoon Seo},
+@misc{lee2024aligning,
+      title={Aligning to Thousands of Preferences via System Message Generalization}, 
+      author={Seongyun Lee* and Sue Hyun Park* and Seungone Kim and Minjoon Seo},
       year={2024},
-      eprint={2311.07362},
+      eprint={2405.17977},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      abstract={Large multimodal models (LMMs) suffer from multimodal hallucination, where they provide incorrect responses misaligned with the given visual information. Recent works have conjectured that one of the reasons behind multimodal hallucination might be due to the vision encoder failing to ground on the image properly. To mitigate this issue, we propose a novel approach that leverages self-feedback as visual cues. Building on this approach, we introduce Volcano, a multimodal self-feedback guided revision model. Volcano generates natural language feedback to its initial response based on the provided visual information and utilizes this feedback to self-revise its initial response. Volcano effectively reduces multimodal hallucination and achieves state-of-the-art on MMHal-Bench, POPE, and GAVIE. It also improves on general multimodal abilities and outperforms previous models on MM-Vet and MMBench. Through a qualitative analysis, we show that Volcano's feedback is properly grounded on the image than the initial response. This indicates that Volcano can provide itself with richer visual information, helping alleviate multimodal hallucination. We publicly release Volcano models of 7B and 13B sizes along with the data and code at this https URL.},
-      arxiv={2311.07362},
-      code={https://github.com/kaistAI/Volcano},
-      tldr={https://x.com/sylee_ai/status/1724364980622114849?s=20},
-      conference={NAACL},
+      abstract={Although humans inherently have diverse values, current large language model (LLM) alignment methods often assume that aligning LLMs with the general public's preferences is optimal. A major challenge in adopting a more individualized approach to LLM alignment is its lack of scalability, as it involves repeatedly acquiring preference data and training new reward models and LLMs for each individual's preferences. To address these challenges, we propose a new paradigm where users specify what they value most within the system message, steering the LLM's generation behavior to better align with the user's intentions. However, a naive application of such an approach is non-trivial since LLMs are typically trained on a uniform system message (e.g., "You are a helpful assistant") which limits their ability to generalize to diverse, unseen system messages. To improve this generalization, we create the Multifaceted Collection, a preference dataset with 192k combinations of values beyond generic helpfulness and harmlessness, spanning 65k user instructions. Using this dataset, we train a 7B LLM called Janus and test it on 921 prompts from 5 benchmarks (AlpacaEval 2.0, FLASK, Koala, MT-Bench, and Self-Instruct) by adding various unseen system messages that reflect user preferences. Janus achieves tie+win rate of 75.2%, 72.4%, and 66.4% against Mistral 7B Instruct v0.2, GPT-3.5 Turbo, and GPT-4, respectively. Unexpectedly, on three benchmarks focused on response helpfulness (AlpacaEval 2.0, MT-Bench, Arena Hard Auto v0.1), Janus also outperforms LLaMA 3 8B Instruct by a +4.0%, +0.1%, +3.0% margin, underscoring that training with a vast array of system messages could also enhance alignment to the general public's preference as well. Our code, dataset, benchmark, and models are available at https://lklab.kaist.ac.kr/Janus/.},
+      arxiv={2405.17977},
+      code={https://github.com/kaistAI/Janus},
+      website={https://lklab.kaist.ac.kr/Janus/},
+      tldr={https://x.com/suehpark/status/1796556352091009122},
       selected={true}
-  }
+}
 
 @misc{lee2024prometheusvision,
       title={Prometheus-Vision: Vision-Language Model as a Judge for Fine-Grained Evaluation}, 
@@ -32,17 +32,17 @@
       selected={true}
 }
 
-@misc{lee2024aligning,
-      title={Aligning to Thousands of Preferences via System Message Generalization}, 
-      author={Seongyun Lee and Sue Hyun Park and Seungone Kim and Minjoon Seo},
+@misc{lee2023volcano,
+      title={Volcano: Mitigating Multimodal Hallucination through Self-Feedback Guided Revision}, 
+      author={Seongyun Lee and Sue Hyun Park and Yongrae Jo and Minjoon Seo},
       year={2024},
-      eprint={2405.17977},
+      eprint={2311.07362},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      abstract={Although humans inherently have diverse values, current large language model (LLM) alignment methods often assume that aligning LLMs with the general public's preferences is optimal. A major challenge in adopting a more individualized approach to LLM alignment is its lack of scalability, as it involves repeatedly acquiring preference data and training new reward models and LLMs for each individual's preferences. To address these challenges, we propose a new paradigm where users specify what they value most within the system message, steering the LLM's generation behavior to better align with the user's intentions. However, a naive application of such an approach is non-trivial since LLMs are typically trained on a uniform system message (e.g., "You are a helpful assistant") which limits their ability to generalize to diverse, unseen system messages. To improve this generalization, we create the Multifaceted Collection, a preference dataset with 192k combinations of values beyond generic helpfulness and harmlessness, spanning 65k user instructions. Using this dataset, we train a 7B LLM called Janus and test it on 921 prompts from 5 benchmarks (AlpacaEval 2.0, FLASK, Koala, MT-Bench, and Self-Instruct) by adding various unseen system messages that reflect user preferences. Janus achieves tie+win rate of 75.2%, 72.4%, and 66.4% against Mistral 7B Instruct v0.2, GPT-3.5 Turbo, and GPT-4, respectively. Unexpectedly, on three benchmarks focused on response helpfulness (AlpacaEval 2.0, MT-Bench, Arena Hard Auto v0.1), Janus also outperforms LLaMA 3 8B Instruct by a +4.0%, +0.1%, +3.0% margin, underscoring that training with a vast array of system messages could also enhance alignment to the general public's preference as well. Our code, dataset, benchmark, and models are available at https://lklab.kaist.ac.kr/Janus/.},
-      arxiv={2405.17977},
-      code={https://github.com/kaistAI/Janus},
-      website={https://lklab.kaist.ac.kr/Janus/},
-      tldr={https://x.com/suehpark/status/1796556352091009122},
+      abstract={Large multimodal models (LMMs) suffer from multimodal hallucination, where they provide incorrect responses misaligned with the given visual information. Recent works have conjectured that one of the reasons behind multimodal hallucination might be due to the vision encoder failing to ground on the image properly. To mitigate this issue, we propose a novel approach that leverages self-feedback as visual cues. Building on this approach, we introduce Volcano, a multimodal self-feedback guided revision model. Volcano generates natural language feedback to its initial response based on the provided visual information and utilizes this feedback to self-revise its initial response. Volcano effectively reduces multimodal hallucination and achieves state-of-the-art on MMHal-Bench, POPE, and GAVIE. It also improves on general multimodal abilities and outperforms previous models on MM-Vet and MMBench. Through a qualitative analysis, we show that Volcano's feedback is properly grounded on the image than the initial response. This indicates that Volcano can provide itself with richer visual information, helping alleviate multimodal hallucination. We publicly release Volcano models of 7B and 13B sizes along with the data and code at this https URL.},
+      arxiv={2311.07362},
+      code={https://github.com/kaistAI/Volcano},
+      tldr={https://x.com/sylee_ai/status/1724364980622114849?s=20},
+      conference={NAACL},
       selected={true}
-}
+  }
