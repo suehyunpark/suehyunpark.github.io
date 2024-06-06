@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Secondary Reviewer
+title: Secondary Conference Reviewer
 date: 2023-08-28
 inline: true
 related_posts: false
