@@ -1,6 +1,19 @@
 ---
 ---
 
+@misc{ko2024investigatinglargelanguagemodels,
+      title={Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning}, 
+      author={Miyoung Ko and Sue Hyun Park and Joonsuk Park and Minjoon Seo},
+      year={2024},
+      eprint={2406.19502},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.19502}, 
+      code={https://github.com/kaistAI/knowledge-reasoning},
+      tldr={https://x.com/suehpark/status/1807761960512942389},
+      selected={true}
+}
+
 @misc{kim2024biggen,
       title={The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models}, 
       author={Seungone Kim and Juyoung Suk and Ji Yong Cho and Shayne Longpre and Chaeeun Kim and Dongkeun Yoon and Guijin Son and Yejin Cho and Sheikh Shafayat and Jinheon Baek and Sue Hyun Park and Hyeonbin Hwang and Jinkyung Jo and Hyowon Cho and Haebin Shin and Seongyun Lee and Hanseok Oh and Noah Lee and Namgyu Ho and Se June Joo and Miyoung Ko and Yoonjoo Lee and Hyungjoo Chae and Jamin Shin and Joel Jang and Seonghyeon Ye and Bill Yuchen Lin and Sean Welleck and Graham Neubig and Moontae Lee and Kyungjae Lee and Minjoon Seo},
@@ -44,16 +57,24 @@
       conference={Findings of ACL},
 }
 
-@misc{lee2023volcano,
-      title={Volcano: Mitigating Multimodal Hallucination through Self-Feedback Guided Revision}, 
-      author={Seongyun Lee and Sue Hyun Park and Yongrae Jo and Minjoon Seo},
-      year={2024},
-      eprint={2311.07362},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      abstract={Large multimodal models (LMMs) suffer from multimodal hallucination, where they provide incorrect responses misaligned with the given visual information. Recent works have conjectured that one of the reasons behind multimodal hallucination might be due to the vision encoder failing to ground on the image properly. To mitigate this issue, we propose a novel approach that leverages self-feedback as visual cues. Building on this approach, we introduce Volcano, a multimodal self-feedback guided revision model. Volcano generates natural language feedback to its initial response based on the provided visual information and utilizes this feedback to self-revise its initial response. Volcano effectively reduces multimodal hallucination and achieves state-of-the-art on MMHal-Bench, POPE, and GAVIE. It also improves on general multimodal abilities and outperforms previous models on MM-Vet and MMBench. Through a qualitative analysis, we show that Volcano's feedback is properly grounded on the image than the initial response. This indicates that Volcano can provide itself with richer visual information, helping alleviate multimodal hallucination. We publicly release Volcano models of 7B and 13B sizes along with the data and code at this https URL.},
-      arxiv={2311.07362},
+@inproceedings{lee-etal-2024-volcano,
+      title = "Volcano: Mitigating Multimodal Hallucination through Self-Feedback Guided Revision",
+      author = "Lee, Seongyun  and
+            Park, Sue Hyun  and
+            Jo, Yongrae  and
+            Seo, Minjoon",
+      editor = "Duh, Kevin  and
+            Gomez, Helena  and
+            Bethard, Steven",
+      booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+      month = jun,
+      year = "2024",
+      address = "Mexico City, Mexico",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2024.naacl-long.23",
+      pages = "391--404",
+      abstract = "Large multimodal models suffer from multimodal hallucination, where they provide incorrect responses misaligned with the given visual information. Recent works have conjectured that one of the reasons behind multimodal hallucination is due to the vision encoder failing to ground on the image properly. To mitigate this issue, we propose a novel approach that leverages self-feedback as visual cues. Building on this approach, we introduce Volcano, a multimodal self-feedback guided revision model. Volcano generates natural language feedback to its initial response based on the provided visual information and utilizes this feedback to self-revise its initial response. Volcano effectively reduces multimodal hallucination and achieves state-of-the-art on MMHal-Bench, POPE, and GAVIE. It also improves on general multimodal abilities and outperforms previous models on MM-Vet and MMBench. Through qualitative analysis, we show that Volcano{'}s feedback is properly grounded on the image than the initial response. This indicates that Volcano can provide itself with richer visual information through feedback generation, leading to self-correct hallucinations. We publicly release our model, data, and code at https://github.com/kaistAI/Volcanogithub.com/kaistAI/Volcano",
       code={https://github.com/kaistAI/Volcano},
       tldr={https://x.com/sylee_ai/status/1724364980622114849?s=20},
       conference={NAACL},
-  }
+}
