@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Starting M.S. at [KAIST AI](https://gsai.kaist.ac.kr/).
+I started my M.S. program at [KAIST AI](https://gsai.kaist.ac.kr/).
