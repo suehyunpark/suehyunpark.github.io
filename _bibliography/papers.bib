@@ -25,7 +25,7 @@
       abstract={As language models (LMs) become capable of handling a wide range of tasks, their evaluation is becoming as challenging as their development. Most generation benchmarks currently assess LMs using abstract evaluation criteria like helpfulness and harmlessness, which often lack the flexibility and granularity of human assessment. Additionally, these benchmarks tend to focus disproportionately on specific capabilities such as instruction following, leading to coverage bias. To overcome these limitations, we introduce the BiGGen Bench, a principled generation benchmark designed to thoroughly evaluate nine distinct capabilities of LMs across 77 diverse tasks. A key feature of the BiGGen Bench is its use of instance-specific evaluation criteria, closely mirroring the nuanced discernment of human evaluation. We apply this benchmark to assess 103 frontier LMs using five evaluator LMs. Our code, data, and evaluation results are all publicly available at https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench.},
       arxiv={2406.05761},
       code={https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench},
-      tldr={https://x.com/seungonekim/status/1800898070638682590},
+      tldr={https://x.com/suehpark/status/1801075567288332547},
 }
 
 @misc{lee2024aligning,
@@ -39,8 +39,9 @@
       arxiv={2405.17977},
       code={https://github.com/kaistAI/Janus},
       website={https://lklab.kaist.ac.kr/Janus/},
+      slides={https://docs.google.com/presentation/d/1t-rAcQEKCCKD0qdlcQHvZxRMnB4O5dyCEzXo6cIjYfI/edit?usp=sharing},
       tldr={https://x.com/suehpark/status/1796556352091009122},
-      selected={true}
+      venue={ACL 2024 Workshop ConvAI (Oral)}
 }
 
 @misc{lee2024prometheusvision,
@@ -54,8 +55,9 @@
       arxiv={2401.06591},
       code={https://github.com/kaistAI/prometheus-vision},
       website={https://prometheus-eval.github.io/prometheus-vision/},
-      tldr={https://x.com/seungonekim/status/1746902216559222965?s=20},
+      tldr={https://x.com/suehpark/status/1746918828137959702},
       conference={Findings of ACL},
+      venue={ACL 2024 Findings}
 }
 
 @inproceedings{lee-etal-2024-volcano,
@@ -76,6 +78,7 @@
       pages = "391--404",
       abstract = "Large multimodal models suffer from multimodal hallucination, where they provide incorrect responses misaligned with the given visual information. Recent works have conjectured that one of the reasons behind multimodal hallucination is due to the vision encoder failing to ground on the image properly. To mitigate this issue, we propose a novel approach that leverages self-feedback as visual cues. Building on this approach, we introduce Volcano, a multimodal self-feedback guided revision model. Volcano generates natural language feedback to its initial response based on the provided visual information and utilizes this feedback to self-revise its initial response. Volcano effectively reduces multimodal hallucination and achieves state-of-the-art on MMHal-Bench, POPE, and GAVIE. It also improves on general multimodal abilities and outperforms previous models on MM-Vet and MMBench. Through qualitative analysis, we show that Volcano{'}s feedback is properly grounded on the image than the initial response. This indicates that Volcano can provide itself with richer visual information through feedback generation, leading to self-correct hallucinations. We publicly release our model, data, and code at https://github.com/kaistAI/Volcanogithub.com/kaistAI/Volcano",
       code={https://github.com/kaistAI/Volcano},
-      tldr={https://x.com/sylee_ai/status/1724364980622114849?s=20},
+      tldr={https://x.com/suehpark/status/1724376309525287337},
       conference={NAACL},
+      venue={NAACL 2024}
 }
