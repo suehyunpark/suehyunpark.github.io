@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 [FriendliAI](https://friendli.ai/)  
-Corporate development & Technical writing intern, worked closely with [Byung-gon Chun](https://bgchun.github.io/)
+Corporate development & Business development intern, worked closely with [Byung-gon Chun](https://bgchun.github.io/)
