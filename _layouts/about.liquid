@@ -54,7 +54,8 @@ layout: default
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
-      {% include news.liquid limit=true %}
+      {% include news.liquid %}
+      {% comment %} {% include news.liquid limit=true %} {% endcomment %}
     {% endif %}
 
     <!-- Latest posts -->
