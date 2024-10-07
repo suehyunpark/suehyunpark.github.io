@@ -1,9 +1,27 @@
 ---
 ---
 
+@misc{lee2024aligning,
+      title={Aligning to Thousands of Preferences via System Message Generalization}, 
+      author={Seongyun Lee* and Sue Hyun Park* and Seungone Kim and Minjoon Seo},
+      year={2024},
+      eprint={2405.17977},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      abstract={Although humans inherently have diverse values, current large language model (LLM) alignment methods often assume that aligning LLMs with the general public's preferences is optimal. A major challenge in adopting a more individualized approach to LLM alignment is its lack of scalability, as it involves repeatedly acquiring preference data and training new reward models and LLMs for each individual's preferences. To address these challenges, we propose a new paradigm where users specify what they value most within the system message, steering the LLM's generation behavior to better align with the user's intentions. However, a naive application of such an approach is non-trivial since LLMs are typically trained on a uniform system message (e.g., "You are a helpful assistant") which limits their ability to generalize to diverse, unseen system messages. To improve this generalization, we create the Multifaceted Collection, a preference dataset with 192k combinations of values beyond generic helpfulness and harmlessness, spanning 65k user instructions. Using this dataset, we train a 7B LLM called Janus and test it on 921 prompts from 5 benchmarks (AlpacaEval 2.0, FLASK, Koala, MT-Bench, and Self-Instruct) by adding various unseen system messages that reflect user preferences. Janus achieves tie+win rate of 75.2%, 72.4%, and 66.4% against Mistral 7B Instruct v0.2, GPT-3.5 Turbo, and GPT-4, respectively. Unexpectedly, on three benchmarks focused on response helpfulness (AlpacaEval 2.0, MT-Bench, Arena Hard Auto v0.1), Janus also outperforms LLaMA 3 8B Instruct by a +4.0%, +0.1%, +3.0% margin, underscoring that training with a vast array of system messages could also enhance alignment to the general public's preference as well. Our code, dataset, benchmark, and models are available at https://lklab.kaist.ac.kr/Janus/.},
+      arxiv={2405.17977},
+      code={https://github.com/kaistAI/Janus},
+      website={https://lklab.kaist.ac.kr/Janus/},
+      slides={https://docs.google.com/presentation/d/1t-rAcQEKCCKD0qdlcQHvZxRMnB4O5dyCEzXo6cIjYfI/edit?usp=sharing},
+      twitter={https://x.com/suehpark/status/1796556352091009122},
+      poster={system_message_generalization_A0 Poster Portrait @72dpi.pdf},
+      venue={NeurIPS 2024},
+      selected={true}
+}
+
 @misc{ko2024investigatinglargelanguagemodels,
       title={Investigating How Large Language Models Leverage Internal Knowledge to Perform Complex Reasoning}, 
-      author={Miyoung Ko* and Sue Hyun Park* and Joonsuk Park and Minjoon Seo},
+      author={Miyoung Ko* and Sue Hyun Park* and Joonsuk Park† and Minjoon Seo†},
       year={2024},
       eprint={2406.19502},
       archivePrefix={arXiv},
@@ -11,7 +29,7 @@
       abstract={Despite significant advancements, there is a limited understanding of how large language models (LLMs) utilize knowledge for reasoning. To address this, we propose a method that deconstructs complex real-world questions into a graph, representing each question as a node with parent nodes of background knowledge needed to solve the question. We develop the DepthQA dataset, deconstructing questions into three depths: (i) recalling conceptual knowledge, (ii) applying procedural knowledge, and (iii) analyzing strategic knowledge. Based on a hierarchical graph, we quantify forward discrepancy, discrepancies in LLMs' performance on simpler sub-problems versus complex questions. We also measure backward discrepancy, where LLMs answer complex questions but struggle with simpler ones. Our analysis shows that smaller models have more discrepancies than larger models. Additionally, guiding models from simpler to complex questions through multi-turn interactions improves performance across model sizes, highlighting the importance of structured intermediate steps in knowledge reasoning. This work enhances our understanding of LLM reasoning and suggests ways to improve their problem-solving abilities.},
       url={https://arxiv.org/abs/2406.19502}, 
       code={https://github.com/kaistAI/knowledge-reasoning},
-      tldr={https://x.com/suehpark/status/1807761960512942389},
+      twitter={https://x.com/suehpark/status/1807761960512942389},
       venue={EMNLP 2024},
       selected={true}
 }
@@ -26,32 +44,14 @@
       abstract={As language models (LMs) become capable of handling a wide range of tasks, their evaluation is becoming as challenging as their development. Most generation benchmarks currently assess LMs using abstract evaluation criteria like helpfulness and harmlessness, which often lack the flexibility and granularity of human assessment. Additionally, these benchmarks tend to focus disproportionately on specific capabilities such as instruction following, leading to coverage bias. To overcome these limitations, we introduce the BiGGen Bench, a principled generation benchmark designed to thoroughly evaluate nine distinct capabilities of LMs across 77 diverse tasks. A key feature of the BiGGen Bench is its use of instance-specific evaluation criteria, closely mirroring the nuanced discernment of human evaluation. We apply this benchmark to assess 103 frontier LMs using five evaluator LMs. Our code, data, and evaluation results are all publicly available at https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench.},
       arxiv={2406.05761},
       code={https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench},
-      tldr={https://x.com/suehpark/status/1801075567288332547},
-}
-
-@misc{lee2024aligning,
-      title={Aligning to Thousands of Preferences via System Message Generalization}, 
-      author={Seongyun Lee* and Sue Hyun Park* and Seungone Kim and Minjoon Seo},
-      year={2024},
-      eprint={2405.17977},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      abstract={Although humans inherently have diverse values, current large language model (LLM) alignment methods often assume that aligning LLMs with the general public's preferences is optimal. A major challenge in adopting a more individualized approach to LLM alignment is its lack of scalability, as it involves repeatedly acquiring preference data and training new reward models and LLMs for each individual's preferences. To address these challenges, we propose a new paradigm where users specify what they value most within the system message, steering the LLM's generation behavior to better align with the user's intentions. However, a naive application of such an approach is non-trivial since LLMs are typically trained on a uniform system message (e.g., "You are a helpful assistant") which limits their ability to generalize to diverse, unseen system messages. To improve this generalization, we create the Multifaceted Collection, a preference dataset with 192k combinations of values beyond generic helpfulness and harmlessness, spanning 65k user instructions. Using this dataset, we train a 7B LLM called Janus and test it on 921 prompts from 5 benchmarks (AlpacaEval 2.0, FLASK, Koala, MT-Bench, and Self-Instruct) by adding various unseen system messages that reflect user preferences. Janus achieves tie+win rate of 75.2%, 72.4%, and 66.4% against Mistral 7B Instruct v0.2, GPT-3.5 Turbo, and GPT-4, respectively. Unexpectedly, on three benchmarks focused on response helpfulness (AlpacaEval 2.0, MT-Bench, Arena Hard Auto v0.1), Janus also outperforms LLaMA 3 8B Instruct by a +4.0%, +0.1%, +3.0% margin, underscoring that training with a vast array of system messages could also enhance alignment to the general public's preference as well. Our code, dataset, benchmark, and models are available at https://lklab.kaist.ac.kr/Janus/.},
-      arxiv={2405.17977},
-      code={https://github.com/kaistAI/Janus},
-      website={https://lklab.kaist.ac.kr/Janus/},
-      slides={https://docs.google.com/presentation/d/1t-rAcQEKCCKD0qdlcQHvZxRMnB4O5dyCEzXo6cIjYfI/edit?usp=sharing},
-      tldr={https://x.com/suehpark/status/1796556352091009122},
-      poster={system_message_generalization_A0 Poster Portrait @72dpi.pdf},
-      venue={NeurIPS 2024, ACL 2024 Workshop ConvAI (Oral)},
-      selected={true}
+      twitter={https://x.com/suehpark/status/1801075567288332547},
 }
 
 @inproceedings{lee-etal-2024-prometheus,
       title = "Prometheus-Vision: Vision-Language Model as a Judge for Fine-Grained Evaluation",
       author = "Lee, Seongyun  and
             Kim, Seungone  and
-            Park, Sue  and
+            Park, Sue Hyun  and
             Kim, Geewook  and
             Seo, Minjoon",
       editor = "Ku, Lun-Wei  and
@@ -63,14 +63,16 @@
       address = "Bangkok, Thailand and virtual meeting",
       publisher = "Association for Computational Linguistics",
       url = "https://aclanthology.org/2024.findings-acl.672",
+      doi = "10.18653/v1/2024.findings-acl.672",
       pages = "11286--11315",
       abstract = "Assessing long-form responses generated by Vision-Language Models (VLMs) is challenging. It not only requires checking whether the VLM follows the given instruction but also verifying whether the text output is properly grounded on the given image. Inspired by the recent approach of evaluating LMs with LMs, in this work, we propose to evaluate VLMs with VLMs. For this purpose, we present a new feedback dataset called the Perception Collection, encompassing 15K customized score rubrics that users might care about during assessment. Using the Perception Collection, we train Prometheus-Vision, the first open-source VLM evaluator model that can understand the user-defined score criteria during evaluation. Prometheus-Vision shows the highest Pearson correlation with human evaluators and GPT-4V among open-source models, showing its effectiveness for transparent and accessible evaluation of VLMs. We open-source our code, dataset, and model.",
       code={https://github.com/kaistAI/prometheus-vision},
       website={https://prometheus-eval.github.io/prometheus-vision/},
-      tldr={https://x.com/suehpark/status/1746918828137959702},
+      twitter={https://x.com/suehpark/status/1746918828137959702},
       conference={Findings of ACL},
-      venue={ACL 2024 Findings}
+      venue={ACL 2024 Findings},
 }
+
 
 
 @inproceedings{lee-etal-2024-volcano,
@@ -91,7 +93,7 @@
       pages = "391--404",
       abstract = "Large multimodal models suffer from multimodal hallucination, where they provide incorrect responses misaligned with the given visual information. Recent works have conjectured that one of the reasons behind multimodal hallucination is due to the vision encoder failing to ground on the image properly. To mitigate this issue, we propose a novel approach that leverages self-feedback as visual cues. Building on this approach, we introduce Volcano, a multimodal self-feedback guided revision model. Volcano generates natural language feedback to its initial response based on the provided visual information and utilizes this feedback to self-revise its initial response. Volcano effectively reduces multimodal hallucination and achieves state-of-the-art on MMHal-Bench, POPE, and GAVIE. It also improves on general multimodal abilities and outperforms previous models on MM-Vet and MMBench. Through qualitative analysis, we show that Volcano{'}s feedback is properly grounded on the image than the initial response. This indicates that Volcano can provide itself with richer visual information through feedback generation, leading to self-correct hallucinations. We publicly release our model, data, and code at https://github.com/kaistAI/Volcanogithub.com/kaistAI/Volcano",
       code={https://github.com/kaistAI/Volcano},
-      tldr={https://x.com/suehpark/status/1724376309525287337},
+      twitter={https://x.com/suehpark/status/1724376309525287337},
       conference={NAACL},
       venue={NAACL 2024},
       selected={true}

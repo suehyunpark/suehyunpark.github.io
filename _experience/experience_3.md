@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 [Software Platform Lab](https://spl.snu.ac.kr/), Seoul National University  
-Undergraduate research intern
+Undergraduate research assistant
